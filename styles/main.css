@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  background-color: #595959; }
+
+body {
+  font-size: 16px; }
+
+.container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1850px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .container div {
+    width: 100%; }
+    .container div img {
+      border-bottom: 3px solid black;
+      width: 100%; }
+    .container div #btn-menu {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      font-size: 12vw;
+      color: #f0f0f0;
+      position: absolute;
+      top: 5vw;
+      left: 5vw;
+      background-color: rgba(51, 51, 51, 0.7);
+      opacity: 10%;
+      height: 20vw;
+      width: 20vw;
+      border-radius: 50%; }
+  .container #playlist {
+    background-color: #333333;
+    overflow: auto; }
+    .container #playlist .song {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      height: 200px;
+      border-bottom: 1px solid black; }
+      .container #playlist .song .btn-play {
+        display: inline-block;
+        margin: 4vw;
+        margin-left: 2vw;
+        padding: 0 1vw;
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        font-size: 15vw;
+        color: #D0D0D0; }
+      .container #playlist .song .track {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: 4vw;
+        color: dimgrey;
+        margin: 2vw;
+        background-color: #D0D0D0; }
+  .container:after {
+    content: " "; }
+
+.btn {
+  border-radius: 50%; }
+  .btn:active {
+    box-shadow: 0px 5px 5px black; }
