@@ -1,2 +1,2 @@
 # Mizidy
-A portfolio website created for Michaël Mizidy
+A artist website created for Michaël Mizidy
