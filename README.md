@@ -1,2 +1,2 @@
 # Mizidy
-A artist website created for Michaël Mizidy
+An artist website created for Michaël Mizidy
