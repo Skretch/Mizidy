@@ -2,9 +2,16 @@ doctype 5
 html(lang="en")
     head
         title The Mizidy Project
+        meta(name="viewport" content="width=device-width")
         link(rel="stylesheet", href="https://use.fontawesome.com/44649b5dd8.css")
         link(rel="stylesheet", href="styles/main.css")
     body
         div.container
             include snippets/header.jade
+            include snippets/menu.jade
             include snippets/playlist.jade
+            include snippets/about.jade
+            include snippets/contact.jade
+            
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+    script(src="scripts/main.js")

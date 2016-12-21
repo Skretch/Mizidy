@@ -1,0 +1,91 @@
+#menu
+    display: none
+    align-items: center
+    color: $white
+    flex-grow: 1
+    justify-content: space-around
+    font-size: 15vw
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+    .btn-list
+        // padding-top: em
+    .btn-contact
+        padding-bottom: .14em
+    .btn-about
+        padding-bottom: 0.01em
+    .btn-twitter
+        padding-bottom: .05em
+
+.btn-list-in
+    animation: btnList-in .3s ease-in-out
+.btn-contact-in
+    animation: btnContact-in .3s ease-in-out
+.btn-about-in
+    animation: btnAbout-in .3s ease-in-out
+.btn-twitter-in
+    animation: btnTwitter-in .3s ease-in-out
+.btn-list-out
+    animation: btnList-out .3s ease-in-out
+.btn-contact-out
+    animation: btnContact-out .3s ease-in-out
+.btn-about-out
+    animation: btnAbout-out .3s ease-in-out
+.btn-twitter-out
+    animation: btnTwitter-out .3s ease-in-out
+
+
+@keyframes btnList-in
+    0%
+        transform: translate(-600%) scale(0)
+        opacity: 0
+    100%
+        opacity: 1
+        transform: translate(0,0) scale(1)
+@keyframes btnContact-in
+    0%
+        transform: translate(-550%) scale(0)
+        opacity: 0
+    100%
+        opacity: 1
+        transform: translate(0,0) scale(1)
+@keyframes btnAbout-in
+    0%
+        opacity: 0
+        transform: translate(-600%) scale(0)
+    100%
+        opacity: 1
+        transform: translate(0,0) scale(1)
+@keyframes btnTwitter-in
+    0%
+        opacity: 0
+        transform: translate(-600%) scale(0)
+    100%
+        opacity: 1
+        transform: translate(0) scale(1)
+@keyframes btnList-out
+    100%
+        opacity: 1
+        transform: translate(0,0) scale(1)
+    100%
+        transform: translate(-600%) scale(0)
+        opacity: 0
+@keyframes btnContact-out
+    0%
+        opacity: 1
+        transform: translate(0,0) scale(1)
+    100%
+        opacity: 0
+        transform: translate(-550%) scale(0)
+@keyframes btnAbout-out
+    0%
+        opacity: 1
+        transform: translate(0,0) scale(1)
+    100%
+        opacity: 0
+        transform: translate(-600%) scale(0)
+@keyframes btnTwitter-out
+    0%
+        opacity: 1
+        transform: translate(0,0) scale(1)
+    100%
+        opacity: 0
+        transform: translate(-600%) scale(0)

@@ -1,18 +1,19 @@
 #playlist
-    background-color: #333333
-    overflow: auto
+    background-color: $grey
     .song
         display: flex
-        height: 200px
+        height: 70px
         border-bottom: 1px solid black
+        justify-content: flex-end
         .btn-play
             display: inline-block
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
             margin: 4vw
             margin-left: 2vw
             padding: 0 1vw
             align-self: center
             font-size: 15vw
-            color: #D0D0D0
+            color: $white
         .track
             display: flex
             align-items: center
@@ -20,4 +21,24 @@
             font-size: 4vw
             color: dimgrey
             margin: 2vw
-            background-color: #D0D0D0
+            background-color: $white
+.playlist-out
+    animation: playlist-out .1s ease-in
+.playlist-in
+    animation: playlist-in .2s ease-in-out
+@keyframes playlist-out
+    0%
+        transform: translate(0,0)
+        overflow: hidden
+    100%
+        transform: translate(0%,300%)
+        overflow: hidden
+@keyframes playlist-in
+    0%
+        transform: translate(0%,300%)
+        overflow: hidden
+        opacity: 0
+    100%
+        transform: translate(0,0)
+        overflow: hidden
+        opacity: 1
