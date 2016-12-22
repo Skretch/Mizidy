@@ -18,7 +18,7 @@ $(".btn-list").click(function(){
     listviewFadeIn($("#playlist"), "block");
 })
 $(".btn-contact").click(function(){
-    menuFadeOut();
+    menuFadeOut()
     listviewFadeIn($("#contact"), "flex");
 });
 function menuFadeIn(){
@@ -63,5 +63,5 @@ function listviewFadeOut(obj){
     setTimeout(function(){
         obj.css("display", "none");
         obj.removeClass("playlist-out");
-    },100);
+    },50);
 }
